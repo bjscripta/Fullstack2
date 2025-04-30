@@ -42,21 +42,14 @@ public class ReporteRepository {
 
     //Actulizar Reporte
     public Reporte actualizarReporteEstado(Reporte r){
-        int id = 0;
-        int posicion = 0;
-
         for (int i = 0; i < reportes.size(); i++) {
-            if(reportes.get(i).getIdReporte()==r.getIdReporte()){
-                id=r.getIdReporte();
-                posicion=i;
+            if (reportes.get(i).getIdReporte() == r.getIdReporte()) {
+                Reporte aux = reportes.get(i);
+                aux.setEstadoReporte("RESUELTO");
+                return aux;
             }
         }
-
-        Reporte reporte1 = new Reporte();
-        reporte1.setIdReporte(id);
-        reporte1.setTituloReporte(reporte1.getTituloReporte());
-        reporte1.setDescripcionReporte(reporte1.getDescripcionReporte());
-        reporte1.setEstadoReporte("RESUELTO");
-        return r;
+        return null;
     }
+    
 }
