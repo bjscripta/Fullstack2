@@ -40,7 +40,7 @@ public class ReporteRepository {
         }
     }
 
-    //Actulizar Reporte
+    //Actulizar estado de la atencion
     public Reporte actualizarReporteEstado(Reporte r){
         for (int i = 0; i < reportes.size(); i++) {
             if (reportes.get(i).getIdReporte() == r.getIdReporte()) {
