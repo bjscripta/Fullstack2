@@ -1,10 +1,11 @@
-package Inventario.Inventario.repository;
+package venta.venta.repository;
 
-import Inventario.Inventario.model.Inventario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import venta.venta.model.Inventario;
+
 import java.lang.Long;
-import java.util.List;
 
 @Repository
 public interface InventarioRepository extends JpaRepository<Inventario,Long> {

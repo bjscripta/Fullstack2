@@ -1,5 +1,9 @@
 package venta.venta.repository;
 
-public interface UsuarioRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import venta.venta.model.Usuario;
+
+public interface UsuarioRepository extends JpaRepository<Usuario,Long> {
 
 }

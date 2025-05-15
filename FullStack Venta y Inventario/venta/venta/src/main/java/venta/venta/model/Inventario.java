@@ -1,5 +1,4 @@
-package Inventario.Inventario.model;
-
+package venta.venta.model;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -10,7 +9,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 @Entity
-@Table(name = "Inventario")
+@Table(name = "inventario")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
